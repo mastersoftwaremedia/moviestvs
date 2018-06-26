@@ -1,6 +1,4 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
-/0-reference
-
 
 # dependencies
 /node_modules
@@ -12,6 +10,7 @@
 /build
 
 # misc
+/0-reference
 .DS_Store
 .env.local
 .env.development.local
