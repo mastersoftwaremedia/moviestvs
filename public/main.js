@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$('.menu').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		$('#main_nav').addClass('active',500);
+	});
+	$(document).click(function(e){
+		$('#main_nav').removeClass('active');
+	});
+});
