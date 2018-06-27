@@ -68,12 +68,10 @@ const URL_RECOMMENDATION='/recommendations'
 export const searchMovies=(term=null)=>dispatch=>{
 	axios.get(`${SEARCH_MOVIES_API_URL}?api_key=${KEY}&language=en-US&page=1&include_adult=false&query=${term.replace(/\s/g,'+')}`)
 	.then(res=>dispatch({type:'SEARCH_MOVIES', payload:res.data.results}))
-	.catch(err=>dispatch({type:'SEARCH_MOVIES', payload:null}))
 }
 export const searchShows=(term=null)=>dispatch=>{
 	axios.get(`${SEARCH_SHOWS_API_URL}?api_key=${KEY}&language=en-US&page=1&query=${term.replace(/\s/g,'+')}`)
 	.then(res=>dispatch({type:'SEARCH_SHOWS', payload:res.data.results}))
-	.catch(err=>dispatch({type:'SEARCH_SHOWS', payload:null}))
 }
 /*FETCH MOVIES->MOVIE*/
 export const fetchMovies=()=>dispatch=>{
