@@ -9,9 +9,9 @@ const initialState={
 export default function(state=initialState,action){
 	switch(action.type){
 		case SEARCH_MOVIES:
-			return {...state, smovies:action.payload}
+			return {...state, smovies:action.payload || null}
 		case SEARCH_SHOWS:
-			return {...state, sshows:action.payload}		
+			return {...state, sshows:action.payload || null}		
 		case FETCH_BANNER:
 			return{...state, banner:action.payload}
 		case FETCH_FAVORITED_ITEMS:
