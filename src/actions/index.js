@@ -1,17 +1,7 @@
 import axios from 'axios'
 import {history} from '../configureStore'
-import * as firebase from 'firebase'
+import firebase from '../firebase'
 
-  // Initialize Firebase
-  const config = {
-    apiKey: "AIzaSyAfEHSEDU3oCUkIKZD6WSzgZYJ2-TUcfCA",
-    authDomain: "newgifsearch-d16ef.firebaseapp.com",
-    databaseURL: "https://newgifsearch-d16ef.firebaseio.com",
-    projectId: "newgifsearch-d16ef",
-    storageBucket: "newgifsearch-d16ef.appspot.com",
-    messagingSenderId: "657645964155"
-  };
-  firebase.initializeApp(config);
 
 export const OPEN_MODAL='OPEN_MODAL'
 export const CLOSE_MODAL='CLOSE_MODAL'

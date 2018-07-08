@@ -8,7 +8,7 @@ const Banner=({banner})=>{
 				<img src="amazingspider.jpg" 
 					alt={banner.title} 
 					className="featured_image" />
-				<a href={banner.homepage} target="_blank"><i className="fa fa-play-circle-o play_button" aria-hidden="true"></i></a>
+				<a href={banner.homepage} rel="noopener noreferrer" target="_blank"><i className="fa fa-play-circle-o play_button" aria-hidden="true"></i></a>
 			</div>
 			<div id="content">
 				<h2 className="title">{banner.title} (2012)</h2><br/>
